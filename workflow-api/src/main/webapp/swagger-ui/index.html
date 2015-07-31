@@ -25,7 +25,7 @@
         <script type="text/javascript">
             $(function () {
                 window.swaggerUi = new SwaggerUi({
-                    url: "http://localhost:8080/workflow/api-docs",
+                    url: "http://localhost:8080/workflow-api/api-docs",
                     dom_id: "swagger-ui-container",
                     supportHeaderParams: true,
                     apiKeyName: 'x-auth-token',
@@ -34,7 +34,7 @@
                         log("Loaded SwaggerUI");
 
                         if (typeof initOAuth == "function") {
-                            /*
+                            /* SpringMVC4
                              initOAuth({
                              clientId: "your-client-id",
                              realm: "your-realms",
